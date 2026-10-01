@@ -272,15 +272,8 @@ $database = "college_db";
 
 ---
 
-## 🙏 Credits
-
-**Project:** Search For College
-**Developed by:** Lakshya Kansal
-
----
-
 <div align="center">
 
-Made with ❤️ using PHP, MySQL, HTML, CSS & JavaScript
+Developed by Lakshya Kansal
 
 </div>
