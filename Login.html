@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+<meta charset="UTF-8"> 
+
+<title>Admin Login - College Portal</title> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<style> 
+
+* { 
+
+margin: 0; 
+
+padding: 0; 
+
+box-sizing: border-box; 
+
+font-family: 'Segoe UI' 
+
+, Tahoma, Geneva, Verdana, sans-serif; 
+
+} 
+
+body { 
+
+height: 100vh; 
+
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+
+url('http://i0.wp.com/ststephens.edu/wp-content/uploads/2016/02/1A.jpg?w=1170') 
+
+center/cover no-repeat; 
+
+display: flex; 
+
+justify-content: center; 
+
+align-items: center; 
+
+color: #fff; 
+
+} 
+
+.login-container { 
+
+background: rgba(0, 0, 0, 0.85); 
+
+padding: 40px 30px; 
+
+border-radius: 15px; 
+
+width: 100%; 
+
+max-width: 400px; 
+
+box-shadow: 0 0 25px rgba(255, 255, 255, 0.1); 
+
+} 
+
+.login-container h2 { 
+
+text-align: center; 
+
+margin-bottom: 25px; 
+
+font-size: 28px; 
+
+} 
+
+.login-container input { 
+
+width: 100%; 
+
+padding: 12px; 
+
+margin: 10px 0; 
+
+background: #333; 
+
+border: none; 
+
+border-radius: 8px; 
+
+color: #fff; 
+
+} 
+
+.login-container button { 
+
+width: 100%; 
+
+padding: 12px; 
+
+background-color: #00b894; 
+
+border: none; 
+
+border-radius: 8px; 
+
+font-size: 16px; 
+
+color: white; 
+
+cursor: pointer; 
+
+margin-top: 10px; 
+
+} 
+
+.login-container button:hover { 
+
+background-color: #019875; 
+
+} 
+
+.note { 
+
+text-align: center; 
+
+margin-top: 15px; 
+
+font-size: 14px; 
+
+color: #ccc; 
+
+} 
+
+.home-button { 
+
+margin-top: 15px; 
+
+background-color: #0984e3; 
+
+} 
+
+.home-button:hover { 
+
+background-color: #0759a3; 
+
+} 
+
+</style> 
+
+</head> 
+
+<body> 
+
+<div class="login-container"> 
+
+<h2>Admin Login</h2> 
+
+<form action="login.php" method="POST"> 
+
+<input type="text" name="username" placeholder="Admin Username" required> 
+
+<input type="password" name="password" placeholder="Admin Password" required> 
+
+<button type="submit">Login</button> 
+
+</form> 
+
+<button class="home-button" onclick="window.location.href='index.html'">Go to 
+
+Homepage</button> 
+
+<p class="note">Access restricted to administrators only.</p> 
+
+</div> 
+
+</body> 
+
+</html> 
