@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CollegeDekho Pro</title>
+<style>
+body {
+margin: 0;
+font-family: 'Segoe UI'
+, Tahoma, Geneva, Verdana, sans-serif;
+background: url('https://res.cloudinary.com/dzcx399ln/image/upload/f
+auto,c
+_
+_
+content/uploads/2022/12/College-Search-Blog.png') no-repeat center center fixed;
+fill/ncsa/wp-
+background-size: cover;
+color: #fff;
+}
+header {
+background: #1e1e1e;
+padding: 20px;
+text-align: center;
+box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+header h1 {
+margin: 0;
+font-size: 2.5em;
+color: #00e676;
+}
+nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #ccc;
+font-weight: bold;
+}
+nav a:hover {
+color: #00e676;
+}
+main {
+padding: 40px 20px;
+max-width: 1000px;
+margin: auto;
+}
+h2 {
+color: #00e676;
+font-size: 2em;
+}
+form {
+margin: 20px 0;
+background: rgba(30,30,30,0.9);
+padding: 20px;
+border-radius: 10px;
+}
+input[type="text"] {
+padding: 10px;
+width: 100%;
+border: none;
+border-radius: 5px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+button {
+padding: 10px 20px;
+background: #00e676;
+border: none;
+border-radius: 5px;
+color: #000;
+font-weight: bold;
+cursor: pointer;
+}
+.college-list {
+margin-top: 40px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 20px;
+}
+.college-card {
+background: #1e1e1e;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+transition: transform 0.3s;
+}
+.college-card:hover {
+transform: translateY(-5px);
+}
+.college-card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 10px;
+margin-bottom: 15px;
+}
+.college-card h3 {
+margin-top: 0;
+color: #00e676;
+}
+.college-card p {
+margin: 5px 0;
+}
+.college-card a {
+display: inline-block;
+margin-top: 10px;
+color: #00e676;
+text-decoration: none;
+font-weight: bold;
+}
+.checklist {
+background: #1f1f1f;
+padding: 1rem;
+border-radius: 8px;
+border: 1px solid #00e676;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+.checklist span {
+font-weight: bold;
+color: #00e676;
+margin-bottom: 0.5rem;
+}
+.checklist-content label {
+display: block;
+cursor: pointer;
+color: white;
+font-size: 0.95rem;
+}
+.checklist-content input[type="checkbox"] {
+margin-right: 0.5rem;
+accent-color: #00e676;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Search For College</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="colleges.php">Colleges</a>
+<a href="contact.php">Contact</a>
+</nav>
+</header>
+<main>
+<h2>Explore Top Colleges in India</h2>
+<p>Search and discover colleges by city, courses (BBA, BCA...), fees, ranking, and
+more.</p>
+<form id="searchForm" onsubmit="return validateSearch()" action="search.php"
+method="GET">
+<div style="display: flex; flex-wrap: wrap; gap: 30px;">
+<!-- Course Field -->
+<div style="flex: 1;">
+<label for="course" style="font-weight:bold;">Course Name:</label>
+<input type="text" id="course" name="course" placeholder="e.g., BBA, BCA...
+">
+</div>
+<!-- City Checkboxes -->
+<div style="flex: 1;" class="checklist">
+<span>Select City</span>
+<div class="checklist-content">
+<label><input type="checkbox" name="city[]" value="Delhi"> Delhi</label>
+<label><input type="checkbox" name="city[]" value="Mumbai"> Mumbai</label>
+<label><input type="checkbox" name="city[]" value="Chennai"> Chennai</label>
+<label><input type="checkbox" name="city[]" value="Kolkata"> Kolkata</label>
+<label><input type="checkbox" name="city[]" value="Chandigarh"> Chandigarh</label>
+<label><input type="checkbox" name="city[]" value="Jaipur"> Jaipur</label>
+<label><input type="checkbox" name="city[]" value="Indore"> Indore</label>
+<label><input type="checkbox" name="city[]" value="Varanasi"> Varanasi</label>
+</div>
+</div>
+</div>
+<br>
+<button type="submit">Search</button>
+<p id="error-msg" style="color: red; font-weight: bold;"></p>
+</form>
+<div class="college-list">
+<div class="college-card">
+<img src="https://thumbs.dreamstime.com/z/indian-institute-technology-bombay-entrance-
+gate-board-entry-iit-logo-front-view-india-s-top-engineering-264169212.jpg?w=768"
+alt="IIT Bombay">
+<h3>IIT Bombay</h3>
+<p><strong>Location:</strong> Mumbai, Maharashtra</p>
+<p><strong>Fees:</strong> ₹2,00,000/year</p>
+<a href="https://www.iitb.ac.in" target="
+blank">Visit Official Website</a>
+_
+</div>
+<div class="college-card">
+<img
+src="https://images.livemint.com/img/2021/12/04/1600x900/Delhi
+_
+University_
+16386072452
+95
+_
+1638607245513.jpg" alt="Delhi University">
+<h3>Delhi University</h3>
+<p><strong>Location:</strong> Delhi</p>
+<p><strong>Fees:</strong> ₹50,000/year</p>
+<a href="https://www.du.ac.in" target="
+blank">Visit Official Website</a>
+_
+</div>
+<div class="college-card">
+<img
+src="https://1.bp.blogspot.com/
+_
+CpC8QYlBkHM/TQhkTlsNUJI/AAAAAAAAACQ/setoUr
+yBR6I/s1600/anna
+_
+univ.jpg" alt="Anna University">
+<h3>Anna University</h3>
+<p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+<p><strong>Fees:</strong> ₹75,000/year</p>
+<a href="https://www.annauniv.edu" target="
+blank">Visit Official Website</a>
+_
+</div>
+<div class="college-card">
+<img
+src="https://assets.telegraphindia.com/telegraph/2021/Feb/1612384454
+1610140640
+_
+_ju.jpg"
+alt="Jadavpur University">
+<h3>Jadavpur University</h3>
+<p><strong>Location:</strong> Kolkata, West Bengal</p>
+<p><strong>Fees:</strong> ₹40,000/year</p>
+<a href="https://jaduniv.edu.in" target="
+blank">Visit Official Website</a>
+_
+</div>
+</div>
+</main>
+<script>
+function validateSearch() {
+const course = document.getElementById('course').value.trim();
+const cities = document.querySelectorAll('input[name="city[]"]:checked');
+const errorMsg = document.getElementById('error-msg');
+if (course === '') {
+errorMsg.textContent = 'Please enter a course name.
+';
+return false;
+}
+if (cities.length === 0) {
+errorMsg.textContent = 'Please select at least one city.
+';
+return false;
+}
+errorMsg.textContent = '';
+return true;
+}
+</script>
+</body>
+</html>
