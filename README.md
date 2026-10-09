@@ -253,7 +253,6 @@ $database = "college_db";
 - **Static data**: pages update only on reload (no AJAX / WebSocket updates).
 - **No file-type validation** for uploads.
 - **Limited analytics**: no dashboards, downloadable reports, or insights.
-- **Not fully responsive**: not optimised for mobile and tablet screens.
 - **Contact messages are not persisted yet**: the database insert / email code in `contact.php` is commented out.
 
 ---
@@ -268,7 +267,6 @@ $database = "college_db";
 - **Mobile App Companion**: Android / iOS app for searching and notifications
 - **Real-Time Notifications**: email / SMS alerts for new colleges, courses, and admission openings
 - **Cloud Deployment**: AWS / Azure hosting for scalability and availability
-- **Prepared statements and server-side validation** across all database queries
 
 ---
 
