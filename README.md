@@ -264,7 +264,6 @@ $database = "college_db";
 - **Admission Status & Calendar Integration**: deadlines, application tracking, reminders for exams and counselling rounds
 - **Fee Structure & Scholarship Modules**: tuition and hostel breakdowns, eligibility checks
 - **Secure Authentication**: password hashing, email verification, multi-factor authentication
-- **Mobile App Companion**: Android / iOS app for searching and notifications
 - **Real-Time Notifications**: email / SMS alerts for new colleges, courses, and admission openings
 - **Cloud Deployment**: AWS / Azure hosting for scalability and availability
 
