@@ -230,7 +230,7 @@ $database = "college_db";
 | Backend | PHP |
 | Database | MySQL (phpMyAdmin for management) |
 | Server | Apache via XAMPP |
-| Browser | Chrome / Firefox / any modern browser |
+| Browser | Chrome / Firefox / Apple Safari / any modern browser |
 
 ---
 
