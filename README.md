@@ -248,7 +248,6 @@ $database = "college_db";
 - **No role-based access control**: only a single admin login exists.
 - **Hardcoded admin account**: no dynamic registration, role management, or credential change.
 - **Basic validation**: mostly client-side; server-side validation and sanitisation are minimal.
-- **No notifications**: no email or SMS alerts.
 - **Static data**: pages update only on reload (no AJAX / WebSocket updates).
 - **Limited analytics**: no dashboards, downloadable reports, or insights.
 - **Contact messages are not persisted yet**: the database insert / email code in `contact.php` is commented out.
